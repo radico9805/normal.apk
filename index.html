@@ -5,64 +5,105 @@
   <title>Sexy Chat</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f1f1f1;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f5f5f5;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
     }
     .container {
-      max-width: 400px;
+      max-width: 900px;
       background: #fff;
       margin: 40px;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
     .app-icon {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 20px;
-      margin-bottom: 15px;
     }
-    h1 {
+    .app-info h1 {
+      margin: 0;
       font-size: 24px;
-      margin: 10px 0;
     }
-    p {
+    .app-info p {
+      margin: 4px 0;
       color: #555;
-      font-size: 14px;
+    }
+    .rating {
+      color: #fbc02d;
+      font-size: 18px;
+      margin: 6px 0;
     }
     .download-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
+      margin-top: 12px;
+      padding: 12px 24px;
       background: #34a853;
       color: #fff;
       font-size: 16px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       transition: background 0.3s ease;
     }
     .download-btn:hover {
       background: #2c8c45;
     }
+    .screenshots {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .screenshots img {
+      width: 30%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .description {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Replace with your app icon -->
-    <img src="app-icon.png" alt="App Icon" class="app-icon">
+    <!-- Header section -->
+    <div class="header">
+      <img src="app-icon.png" alt="Sexy Chat Icon" class="app-icon">
+      <div class="app-info">
+        <h1>Sexy Chat</h1>
+        <p>MyCompany Inc.</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.3)</div>
+        <a href="signed.apk" class="download-btn">Download APK</a>
+      </div>
+    </div>
 
-    <h1>My App</h1>
-    <p>Experience the best features of My App. Fast, reliable, and easy to use!</p>
+    <!-- Screenshots -->
+    <div class="screenshots">
+      <img src="screenshot1.png" alt="Screenshot 1">
+      <img src="screenshot2.png" alt="Screenshot 2">
+      <img src="screenshot3.png" alt="Screenshot 3">
+    </div>
 
-    <!-- Download button -->
-    <a href="signed.apk" class="download-btn">Download APK</a>
+    <!-- Description -->
+    <div class="description">
+      <h2>About this app</h2>
+      <p>
+        Sexy Chat gives you a fast, fun, and easy way to connect.  
+        Enjoy real-time conversations, smooth performance, and a clean design 
+        that makes chatting more exciting than ever before.
+      </p>
+    </div>
   </div>
 </body>
 </html>
-
-
